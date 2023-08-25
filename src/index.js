@@ -1,21 +1,17 @@
 import _ from 'lodash';
-import printMe from './print.js';
+import Task from './task.js';
+// import printMe from './print.js';
 import './style.css';
 
-function component() {
-  const element = document.createElement('div');
-  const btn = document.createElement('button');
+const task = new Task();
 
-  //- Lodash, currently included via a script, is required for this line to work
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Good', 'poeple'], ' ');
-  element.classList.add('hello');
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
-
-  element.appendChild(btn);
-
-  return element;
-}
-
-document.body.appendChild(component());
+window.addEventListener('load', task.init);
+// document.addEventListener('load', () => {
+//   alert('');
+// });
+// const textInput = document.querySelector('.form-input');
+// const formBtn = document.getElementById('submit-btn');
+// const deleteBtn = document.querySelector('.vertical-dots');
+// const taskList = document.querySelector('.task-list');
+// console.log(ui.formBtn);
+// document.body.appendChild(component());
