@@ -5,7 +5,9 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    print: './src/print.js',
+    data: './src/data.js',
+    task: './src/task.js',
+    ui: './src/ui.js',
   },
   devServer: {
     static: './dist',

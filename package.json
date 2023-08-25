@@ -1,7 +1,7 @@
 {
   "name": "webpack-start",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repository demostrate webpack configurations.",
   "private": true,
   "scripts": {
     "start": "webpack serve --open",
@@ -29,5 +29,6 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "main": "webpack.config.js"
 }

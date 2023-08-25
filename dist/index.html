@@ -3,8 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="print.bundle.js"></script></head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="data.bundle.js"></script><script defer src="task.bundle.js"></script><script defer src="ui.bundle.js"></script></head>
   <body>
-    <h1>Hello webpack!</h1>
+    <section>
+      <div class="todo-wrapper">
+        <h3 class="todo-header">Today's Todo</h3>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Enter a task"
+            class="form-input"
+          /><button type="submit" id="submit-btn">
+            <i class="fa fa-arrow-circle-left"></i>
+          </button>
+        </form>
+        <ul class="task-tist">
+          <li class="task">
+            <input type="checkbox" name="" id="0" value="pp" />
+            <label for="0">frgrer</label
+            ><button type="button" class="vertical-dots">&#8942;</button>
+          </li>
+          <li class="task">
+            <input type="checkbox" name="" id="" value="pp" /><label for="2"
+              >fba</label
+            ><button type="button" class="vertical-dots">&#8942;</button>
+          </li>
+          <li class="task">
+            <input type="checkbox" name="" id="" value="pp" /><label for="3"
+              >wrqw</label
+            ><button type="button" class="vertical-dots">&#8942;</button>
+          </li>
+        </ul>
+        <h3 class="todo-footer">clear all completed</h3>
+      </div>
+    </section>
   </body>
 </html>
