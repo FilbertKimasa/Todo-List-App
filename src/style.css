@@ -8,6 +8,17 @@ body {
   background-color: #f6f6f6;
 }
 
+.tasks-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tasks-heading i {
+  padding: 2%;
+  cursor: pointer;
+}
+
 form {
   display: flex;
   flex-direction: row;
@@ -21,10 +32,9 @@ form {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 14%;
+  margin-top: 10%;
   background-color: #ffffff;
   width: 50%;
-  /* padding: 2%; */
   box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
@@ -72,14 +82,15 @@ ul li {
   align-items: flex-start;
   gap: 5px;
   border-bottom: 1px solid #e4e4e4;
-  padding: 2%;
-  /* justify-content: space-between; */
+  padding: 1% 2% 1% 2%;
 }
 
 .vertical-dots {
   margin-left: auto;
   background-color: inherit;
   border: none;
+  cursor: pointer;
+  padding: 1%;
 }
 
 .todo-footer {
