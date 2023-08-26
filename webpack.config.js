@@ -7,6 +7,7 @@ module.exports = {
     index: './src/index.js',
     task: './src/task.js',
     ui: './src/ui.js',
+    data: './src/data.js',
   },
   devServer: {
     static: './dist',
