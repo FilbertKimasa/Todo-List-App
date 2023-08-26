@@ -7,12 +7,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-  <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="data.bundle.js"></script><script defer src="task.bundle.js"></script><script defer src="ui.bundle.js"></script></head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="task.bundle.js"></script><script defer src="ui.bundle.js"></script></head>
   <body>
     <section>
       <div class="todo-wrapper">
-        <h3 class="todo-header">Today's Todo</h3>
-        <form action="">
+        <div class="tasks-heading">
+          <h3 class="todo-header">Today's Todo</h3>
+          <i class="material-icons sync">sync</i>
+        </div>
+
+        <form action="" class="task-form">
           <input
             type="text"
             placeholder="Enter a task"
@@ -21,23 +29,7 @@
             <i class="fa fa-arrow-circle-left"></i>
           </button>
         </form>
-        <ul class="task-tist">
-          <li class="task">
-            <input type="checkbox" name="" id="0" value="pp" />
-            <label for="0">frgrer</label
-            ><button type="button" class="vertical-dots">&#8942;</button>
-          </li>
-          <li class="task">
-            <input type="checkbox" name="" id="" value="pp" /><label for="2"
-              >fba</label
-            ><button type="button" class="vertical-dots">&#8942;</button>
-          </li>
-          <li class="task">
-            <input type="checkbox" name="" id="" value="pp" /><label for="3"
-              >wrqw</label
-            ><button type="button" class="vertical-dots">&#8942;</button>
-          </li>
-        </ul>
+        <ul class="task-list"></ul>
         <h3 class="todo-footer">clear all completed</h3>
       </div>
     </section>
