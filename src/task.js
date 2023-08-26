@@ -1,8 +1,10 @@
 import UI from './ui.js';
+import Data from './data.js';
 
 export default class Task {
   constructor() {
     this.ui = new UI();
+    this.data = new Data();
     this.ui.textInput.focus();
     this.renderTasks();
   }

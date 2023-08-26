@@ -5,4 +5,4 @@ import './style.css';
 
 const task = new Task();
 
-window.addEventListener('load', task.renderTasks);
+window.addEventListener('DOMContentLoaded', task.renderTasks);
