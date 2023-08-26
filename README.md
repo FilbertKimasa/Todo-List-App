@@ -44,8 +44,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Display books from the rage storage]**
-- **[Add books from the rage]**
+- **[Display List of added tasks]**
+- **[Add task to the list]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
