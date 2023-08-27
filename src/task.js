@@ -21,7 +21,7 @@ export default class Task {
     if (description.length > 0) {
       const task = { index, description, completed };
       const same = this.data.tasks.some(
-        (tsk) => JSON.stringify(tsk) === JSON.stringify(task)
+        (tsk) => JSON.stringify(tsk) === JSON.stringify(task),
       );
       if (!same) {
         this.data.tasks.push(task);
@@ -41,7 +41,7 @@ export default class Task {
             <label for="0" class="task-description">${task.description}</label
             ><button type="button" class="vertical-dots">&#8942;</button>
           </li>
-        `
+        `,
       )
       .join('');
 
