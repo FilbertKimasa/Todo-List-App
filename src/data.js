@@ -3,8 +3,8 @@ export default class Data {
     this.tasks = JSON.parse(localStorage.getItem('tasks')) || [];
   }
 
-  removeTask(taskName) {
-    this.tasks = this.tasks.filter((task) => task.description !== taskName);
+  removeTask(id) {
+    this.tasks = this.tasks.filter((task) => task.index !== id);
     this.updateStorage();
   }
 
