@@ -15,7 +15,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Data)\n/* harmony export */ });\nclass Data {\n  constructor() {\n    this.tasks = [\n      {\n        description: 'An example description one',\n        completed: false,\n        index: 1,\n      },\n      {\n        description: 'An example description two',\n        completed: false,\n        index: 2,\n      },\n    ];\n  }\n\n  removeTask(taskName) {\n    this.tasks = this.tasks.filter((task) => task.description !== taskName);\n    this.updateStorage();\n  }\n\n  updateStorage() {\n    if (this.tasks) {\n      for (let i = 0; i < this.tasks.length; i += 1) {\n        this.tasks[i].index = i;\n      }\n      localStorage.setItem('tasks', JSON.stringify(this.tasks));\n      return;\n    }\n    localStorage.setItem('tasks', JSON.stringify(this.tasks));\n  }\n}\n\n\n//# sourceURL=webpack://webpack-start/./src/data.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Data)\n/* harmony export */ });\nclass Data {\n  constructor() {\n    this.tasks = [\n      {\n        description: 'An example description one',\n        completed: false,\n        index: 1,\n      },\n      {\n        description: 'An example description two',\n        completed: false,\n        index: 2,\n      },\n    ];\n  }\n}\n\n\n//# sourceURL=webpack://webpack-start/./src/data.js?");
 
 /***/ })
 
