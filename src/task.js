@@ -18,7 +18,7 @@ export default class Task {
             <label for="0" class="task-description">${task.description}</label
             ><button type="button" class="vertical-dots">&#8942;</button>
           </li>
-        `
+        `,
       )
       .join('');
   }
