@@ -21,7 +21,7 @@ export default class Task {
     if (description.length > 0) {
       const task = { index, description, completed };
       const same = this.data.tasks.some(
-        (tsk) => JSON.stringify(tsk) === JSON.stringify(task),
+        (tsk) => JSON.stringify(tsk) === JSON.stringify(task)
       );
       if (!same) {
         this.data.tasks.push(task);
@@ -36,12 +36,12 @@ export default class Task {
     this.ui.taskList.innerHTML = this.data.tasks
       .map(
         (task) => `
-          <li class="task">
-            <input type="checkbox" name="" id="0" value="pp" />
+          <li class="task" id="${task.index}">
+            <input type="checkbox" name="" value="pp" />
             <label for="0" class="task-description">${task.description}</label
             ><button type="button" class="vertical-dots">&#8942;</button>
           </li>
-        `,
+        `
       )
       .join('');
 
@@ -49,9 +49,13 @@ export default class Task {
     removeBtns.forEach((btn) => {
       btn.addEventListener('click', (e) => {
         const card = e.target.closest('.task');
-        const taskName = card.querySelector('.task-description').innerText;
-        this.data.removeTask(taskName);
-        this.renderTasks();
+        // const taskName = card.querySelector('.task-description').innerText;
+        let { id } = card;
+
+        id = parseInt(id, 10);
+        this.data.removeTask(id);
+        // console.log(id);
+        this.renderTasks(id);
       });
     });
   }
