@@ -8,6 +8,11 @@ export default class Data {
     this.updateStorage();
   }
 
+  removeCompletedTasks(status) {
+    this.tasks = this.tasks.filter((task) => task.completed !== status);
+    this.updateStorage();
+  }
+
   updateStorage() {
     if (this.tasks) {
       for (let i = 0; i < this.tasks.length; i += 1) {
@@ -16,6 +21,11 @@ export default class Data {
       localStorage.setItem('tasks', JSON.stringify(this.tasks));
       return;
     }
+    localStorage.setItem('tasks', JSON.stringify(this.tasks));
+  }
+
+  updateTaskStatus(id, eventState) {
+    this.tasks[id].completed = eventState;
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
   }
 }
