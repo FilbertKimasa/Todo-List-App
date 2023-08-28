@@ -91,11 +91,34 @@ ul li {
   border: none;
   cursor: pointer;
   padding: 1%;
+  width: 30px;
+}
+
+.three-dots {
+  font-size: 20px;
+}
+
+.delete-icon {
+  font-size: 20px;
+  display: none;
+}
+
+.vertical-dots:hover .delete-icon {
+  display: block;
+}
+
+.vertical-dots:hover .three-dots {
+  display: none;
 }
 
 .todo-footer {
+  background-color: #fff;
   color: #8c8c8c;
   text-align: center;
   padding-top: 3%;
   padding-bottom: 3%;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
 }
