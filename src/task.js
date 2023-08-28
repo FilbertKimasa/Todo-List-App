@@ -8,7 +8,7 @@ export default class Task {
     this.ui.formBtn.addEventListener('click', this.addTask.bind(this));
     this.ui.clearCompleted.addEventListener(
       'click',
-      this.clearCompleted.bind(this)
+      this.clearCompleted.bind(this),
     );
     this.ui.textInput.focus();
     this.renderTasks();
@@ -25,7 +25,7 @@ export default class Task {
     if (description.length > 0) {
       const task = { index, description, completed };
       const same = this.data.tasks.some(
-        (tsk) => JSON.stringify(tsk) === JSON.stringify(task)
+        (tsk) => JSON.stringify(tsk) === JSON.stringify(task),
       );
       if (!same) {
         this.data.tasks.push(task);
@@ -42,12 +42,12 @@ export default class Task {
         (task) => `
           <li class="task" id="${task.index}">
             <input type="checkbox" name="" ${
-              task.completed ? 'checked' : ''
-            } class="task-state" />
+  task.completed ? 'checked' : ''
+} class="task-state" />
             <label for="0" class="task-description">${task.description}</label
             ><button type="button" class="vertical-dots"><span class="three-dots">&#8942;</span><i class="material-icons delete-icon">delete</i></button>
           </li>
-        `
+        `,
       )
       .join('');
 
