@@ -127,6 +127,10 @@ ul li {
   font-size: 20px;
 }
 
+.strike {
+  text-decoration: line-through;
+}
+
 .edit-label-wrapper {
   position: absolute;
   z-index: 5;
@@ -154,6 +158,14 @@ ul li {
   display: flex;
   flex-direction: row;
   top: 0;
+}
+
+.btn-edit:hover {
+  color: #007bff;
+}
+
+.btn-delete:hover {
+  color: #dc3545;
 }
 
 .todo-footer {
