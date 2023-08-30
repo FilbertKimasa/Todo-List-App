@@ -15,7 +15,7 @@
   \*******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ UI)\n/* harmony export */ });\nclass UI {\n  constructor() {\n    this.textInput = document.querySelector('.form-input');\n    this.formBtn = document.getElementById('submit-btn');\n    this.deleteTask = document.querySelector('.vertical-dots');\n    this.taskList = document.querySelector('.task-list');\n    this.form = document.querySelector('.task-form');\n    this.sync = document.querySelector('.sync');\n  }\n}\n\n\n//# sourceURL=webpack://webpack-start/./src/ui.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ UI)\n/* harmony export */ });\nclass UI {\n  constructor() {\n    this.textInput = document.querySelector('.form-input');\n    this.formBtn = document.getElementById('submit-btn');\n    this.deleteTask = document.querySelector('.vertical-dots');\n    this.taskList = document.querySelector('.task-list');\n    this.form = document.querySelector('.task-form');\n    this.sync = document.querySelector('.sync');\n    this.clearCompleted = document.querySelector('.todo-footer');\n\n    this.sync.addEventListener('click', this.syncPage.bind(this));\n  }\n\n  clearInputs() {\n    this.textInput.value = '';\n  }\n\n  syncPage() {\n    window.location.reload();\n    this.textInput.focus();\n  }\n}\n\n\n//# sourceURL=webpack://webpack-start/./src/ui.js?");
 
 /***/ })
 

@@ -29,6 +29,7 @@ form {
 }
 
 .todo-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -50,6 +51,10 @@ form {
   border: none;
 }
 
+#submit-btn {
+  cursor: pointer;
+}
+
 .form-input:focus {
   outline: none;
   font-family: 'Inter', sans-serif;
@@ -67,13 +72,10 @@ form {
   padding-top: 15px;
 }
 
-input {
-  height: 100%;
-}
-
 ul {
   list-style: none;
   margin-top: 10px;
+  z-index: 1;
 }
 
 ul li {
@@ -82,7 +84,31 @@ ul li {
   align-items: flex-start;
   gap: 5px;
   border-bottom: 1px solid #e4e4e4;
-  padding: 1% 2% 1% 2%;
+  padding: 0.1% 2% 0.1% 2%;
+  height: 45px;
+  position: relative;
+}
+
+.task-description {
+  border: none;
+  width: 80%;
+  font-size: 15px;
+  outline: none;
+}
+
+.save-btn {
+  background-color: rgb(69, 69, 83);
+  color: #fff;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.save-btn,
+.task-description,
+.task-state {
+  margin-top: 10px;
+  height: 23px;
 }
 
 .vertical-dots {
@@ -93,9 +119,55 @@ ul li {
   padding: 1%;
 }
 
+.three-dots {
+  font-size: 20px;
+}
+
+.delete-icon {
+  font-size: 20px;
+}
+
+.edit-label-wrapper {
+  position: absolute;
+  z-index: 5;
+  right: 14px;
+  margin-top: 8px;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.edit-label-wrapper button {
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  padding: 3px;
+  cursor: pointer;
+  height: 30px;
+}
+
+.edit-label-wrapper button:nth-child(1) {
+  border-right: 1px solid #e4e4e4;
+}
+
+.vertical-dots:hover .edit-label-wrapper {
+  display: flex;
+  flex-direction: row;
+  top: 0;
+}
+
 .todo-footer {
+  background-color: #fff;
   color: #8c8c8c;
   text-align: center;
   padding-top: 3%;
   padding-bottom: 3%;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
 }

@@ -6,5 +6,17 @@ export default class UI {
     this.taskList = document.querySelector('.task-list');
     this.form = document.querySelector('.task-form');
     this.sync = document.querySelector('.sync');
+    this.clearCompleted = document.querySelector('.todo-footer');
+
+    this.sync.addEventListener('click', this.syncPage.bind(this));
+  }
+
+  clearInputs() {
+    this.textInput.value = '';
+  }
+
+  syncPage() {
+    window.location.reload();
+    this.textInput.focus();
   }
 }
