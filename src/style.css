@@ -97,7 +97,7 @@ ul li {
 }
 
 .save-btn {
-  background-color: rgb(69, 69, 83);
+  background-color: #007bff;
   color: #fff;
   padding: 4px;
   border: none;
@@ -169,7 +169,7 @@ ul li {
 }
 
 .save-btn:hover {
-  background-color: #007bff;
+  background-color: #00b7ff;
   color: #fff;
 }
 
@@ -192,6 +192,8 @@ ul li {
 .todo-footer:hover {
   background-color: #dc3545;
   color: #fff;
+  outline: none;
+  border: none;
 }
 
 .hide {
