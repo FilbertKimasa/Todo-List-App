@@ -94,7 +94,6 @@ ul li {
   width: 80%;
   font-size: 15px;
   outline: none;
-  /* margin-top: 10px; */
 }
 
 .save-btn {
@@ -118,7 +117,6 @@ ul li {
   border: none;
   cursor: pointer;
   padding: 1%;
-  /* width: 30px; */
 }
 
 .three-dots {
@@ -127,25 +125,15 @@ ul li {
 
 .delete-icon {
   font-size: 20px;
-  /* display: none; */
 }
 
 .edit-label-wrapper {
   position: absolute;
   z-index: 5;
-  /* height: 90px; */
   right: 14px;
   margin-top: 8px;
-  /* display: block; */
-  /* display: flex;
-  flex-direction: row; */
-  /* color: red; */
-  /* background-color: red; */
   display: none;
-  /* flex-direction: column; */
-  /* width: 7%; */
   background-color: #fff;
-  /* border: 6px solid black; */
   box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
@@ -162,25 +150,11 @@ ul li {
   border-right: 1px solid #e4e4e4;
 }
 
-/* .edit-label-wrapper button:nth-child(2) {
-  border-right: 1px solid #e4e4e4;
-} */
-
-/* .btn-delete {
-  border-top: 1px solid #e4e4e4;
-} */
-
 .vertical-dots:hover .edit-label-wrapper {
   display: flex;
   flex-direction: row;
   top: 0;
-  /* border: 1px solid red;
-  background-color: red; */
 }
-
-/* .vertical-dots:hover .three-dots {
-  display: none;
-} */
 
 .todo-footer {
   background-color: #fff;
