@@ -16,7 +16,7 @@ export default class Data {
   updateStorage() {
     if (this.tasks) {
       for (let i = 0; i < this.tasks.length; i += 1) {
-        this.tasks[i].index = i;
+        this.tasks[i].index = i + 1;
       }
       localStorage.setItem('tasks', JSON.stringify(this.tasks));
       return;
@@ -25,7 +25,12 @@ export default class Data {
   }
 
   updateTaskStatus(id, eventState) {
-    this.tasks[id].completed = eventState;
+    this.tasks[id - 1].completed = eventState;
+    localStorage.setItem('tasks', JSON.stringify(this.tasks));
+  }
+
+  editTask(id, newDescription) {
+    this.tasks[id - 1].description = newDescription;
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
   }
 }
