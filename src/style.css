@@ -168,6 +168,20 @@ ul li {
   color: #dc3545;
 }
 
+.save-btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.todo-footer:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.sync:hover {
+  color: #007bff;
+}
+
 .todo-footer {
   background-color: #fff;
   color: #8c8c8c;
