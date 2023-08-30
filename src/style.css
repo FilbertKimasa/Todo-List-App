@@ -97,7 +97,7 @@ ul li {
 }
 
 .save-btn {
-  background-color: rgb(69, 69, 83);
+  background-color: #007bff;
   color: #fff;
   padding: 4px;
   border: none;
@@ -125,6 +125,10 @@ ul li {
 
 .delete-icon {
   font-size: 20px;
+}
+
+.strike {
+  text-decoration: line-through;
 }
 
 .edit-label-wrapper {
@@ -156,6 +160,23 @@ ul li {
   top: 0;
 }
 
+.btn-edit:hover {
+  color: #007bff;
+}
+
+.btn-delete:hover {
+  color: #dc3545;
+}
+
+.save-btn:hover {
+  background-color: #00b7ff;
+  color: #fff;
+}
+
+.sync:hover {
+  color: #007bff;
+}
+
 .todo-footer {
   background-color: #fff;
   color: #8c8c8c;
@@ -166,6 +187,13 @@ ul li {
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.todo-footer:hover {
+  background-color: #dc3545;
+  color: #fff;
+  outline: none;
+  border: none;
 }
 
 .hide {

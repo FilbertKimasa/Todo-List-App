@@ -97,7 +97,7 @@ export default class Task {
     });
 
     taskState.forEach((check) => {
-      check.addEventListener('click', (e) => {
+      check.addEventListener('change', (e) => {
         const card = e.target.closest('.task');
         let { id } = card;
         id = parseInt(id, 10);
