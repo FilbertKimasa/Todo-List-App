@@ -173,11 +173,6 @@ ul li {
   color: #fff;
 }
 
-.todo-footer:hover {
-  background-color: #dc3545;
-  color: #fff;
-}
-
 .sync:hover {
   color: #007bff;
 }
@@ -192,6 +187,11 @@ ul li {
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.todo-footer:hover {
+  background-color: #dc3545;
+  color: #fff;
 }
 
 .hide {

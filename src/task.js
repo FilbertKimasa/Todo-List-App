@@ -8,7 +8,7 @@ export default class Task {
     this.ui.formBtn.addEventListener('click', this.addTask.bind(this));
     this.ui.clearCompleted.addEventListener(
       'click',
-      this.clearCompleted.bind(this)
+      this.clearCompleted.bind(this),
     );
     this.ui.textInput.focus();
     this.renderTasks();
@@ -37,11 +37,11 @@ export default class Task {
         (task) => `
           <li class="task" id="${task.index}">
             <input type="checkbox" name="" ${
-              task.completed ? 'checked' : ''
-            } class="task-state" />
+  task.completed ? 'checked' : ''
+} class="task-state" />
             <input type="text" class="task-description" readonly value="${
-              task.description
-            }"
+  task.description
+}"
             /><button type="button" class="save-btn hide">save</button><div class="vertical-dots"><span class="three-dots">&#8942;</span>
             <div class="edit-label-wrapper">
       <button type="button" class="btn-edit">
@@ -53,7 +53,7 @@ export default class Task {
     </div>
             </div>
           </li>
-        `
+        `,
       )
       .join('');
 
