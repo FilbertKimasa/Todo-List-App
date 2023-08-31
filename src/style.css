@@ -193,8 +193,7 @@ ul li {
 }
 
 .todo-footer:hover {
-  background-color: #dc3545;
-  color: #fff;
+  color: #dc3545;
   outline: none;
   border: none;
 }
