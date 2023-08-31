@@ -48,7 +48,7 @@ export default class Task {
         <i class="material-icons edit-task">edit</i>
       </button>
       <button type="button" class="btn-delete">
-        <i class="material-icons delete-task delete-icon">delete</i>
+        <i class="material-icons delete-task">delete</i>
       </button>
     </div>
             </div>

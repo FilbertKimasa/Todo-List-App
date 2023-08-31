@@ -123,7 +123,8 @@ ul li {
   font-size: 20px;
 }
 
-.delete-icon {
+.delete-task,
+.edit-task {
   font-size: 20px;
 }
 
@@ -148,6 +149,7 @@ ul li {
   padding: 3px;
   cursor: pointer;
   height: 30px;
+  transition: 0.3s;
 }
 
 .edit-label-wrapper button:nth-child(1) {
@@ -187,6 +189,7 @@ ul li {
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .todo-footer:hover {
