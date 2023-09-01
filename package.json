@@ -4,6 +4,8 @@
   "description": "This repository demostrate webpack configurations.",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -18,13 +20,14 @@
   "bugs": {
     "url": "https://github.com/FilbertKimasa/Webpack-Start/issues"
   },
-  "homepage": "https://github.com/FilbertKimasa/Webpack-Start#readme",
+  "homepage": "https://FilbertKimasa.github.io/Todo-List-App",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.8.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.28.1",
+    "gh-pages": "^6.0.0",
     "hint": "^7.1.10",
     "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",
