@@ -3,7 +3,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h2>ToDo-List-App</h2>
+  <h2>todo-list-app</h2>
   <br/>
 </div>
 
@@ -13,6 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -26,7 +27,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 ToDo-List-App <a name="ToDo-List-App"></a>
+# 📖 todo-list-app <a name="todo-list-app"></a>
 
 **Awesome Books**ToDo List App is a kind of app that generally used to maintain the day-to-day tasks or list everything that required to be done for the day.
 
@@ -49,6 +50,10 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://filbertkimasa.github.io/Todo-List-App/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -70,7 +75,7 @@ Software
 Clone this repository to your desired folder Enter the following commands in the terminal:
 
 ```sh
-  git clone https://github.com/FilbertKimasa/Todo-List-App
+  git clone https://github.com/FilbertKimasa/todo-list-app
 ```
 
 ### Install
@@ -143,7 +148,7 @@ npx eslint .
  
 ## 🤝 Contributing <a name="contributing"></a>
 
-You are welcome, and click <a href="https://github.com/FilbertKimasa/Todo-List-App/issues">here</a> for any issues🙏
+You are welcome, and click <a href="https://github.com/FilbertKimasa/todo-list-app/issues">here</a> for any issues🙏
 
 ## ⭐️ Show your support <a name="support"></a>
 

@@ -1,26 +1,26 @@
 {
-  "name": "webpack-start",
+  "name": "todo-list-app",
   "version": "1.0.0",
   "description": "This repository demostrate webpack configurations.",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "start": "webpack serve --open",
     "build": "webpack"
   },
   "repository": {
     "type": "git",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "url": "git+https://github.com/FilbertKimasa/Webpack-Start.git"
+    "url": "git+https://github.com/FilbertKimasa/Todo-List_App.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FilbertKimasa/Webpack-Start/issues"
+    "url": "https://github.com/FilbertKimasa/todo-list-app/issues"
   },
-  "homepage": "https://FilbertKimasa.github.io/Todo-List-App",
+  "homepage": "https://FilbertKimasa.github.io/todo-list-app",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.8.1",
