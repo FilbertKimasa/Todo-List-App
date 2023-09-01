@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="task.bundle.js"></script><script defer src="ui.bundle.js"></script><script defer src="data.bundle.js"></script></head>
+  <body>
+    <section>
+      <div class="todo-wrapper">
+        <div class="tasks-heading">
+          <h3 class="todo-header">Today's Todo</h3>
+          <i class="material-icons sync">sync</i>
+        </div>
+
+        <form action="" class="task-form">
+          <input
+            type="text"
+            placeholder="Enter a task"
+            class="form-input"
+          /><button type="submit" id="submit-btn">
+            <i class="fa fa-arrow-circle-left"></i>
+          </button>
+        </form>
+        <ul class="task-list"></ul>
+        <button type="button" class="todo-footer">clear all completed</button>
+      </div>
+    </section>
+  </body>
+</html>
